@@ -1,0 +1,110 @@
+@import url('https://fonts.cdnfonts.com/css/billabong');
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 311px;
+  height: auto;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 20px 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  border: 0px solid transparent;
+  margin: 0;
+}
+
+.sidebar-logo {
+  padding: 0 0 0 12px;
+  border: 0px solid transparent;
+  margin: 0 0 20px 0;
+}
+
+.sidebar-logo h1 {
+  font-family: 'Billabong', cursive;
+  font-size: 36px;
+  color: #ffffff;
+  margin: 0;
+}
+
+.sidebar-main-nav {
+  width: 220px;
+  height: 657px;
+  padding-left: 12px;
+  box-sizing: border-box;
+}
+
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  margin-bottom: 4px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.sidebar-item:hover {
+  background-color: #262626;
+}
+
+.sidebar-icon {
+  font-size: 24px;
+  margin-right: 16px;
+  width: 24px;
+  text-align: center;
+}
+
+.notification-badge {
+  background-color: #ed4956;
+  color: #ffffff;
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 10px;
+  margin-left: 8px;
+}
+
+.sidebar-label {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.sidebar-more {
+  padding-left: 12px;
+  margin-top: auto; /* Pushes "More" and its items to the bottom */
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 72px;
+    height: auto;
+    padding: 16px 0;
+  }
+  .sidebar-logo {
+    padding: 0 0 0 8px;
+    border: 0px solid transparent;
+  }
+  .sidebar-logo h1 {
+    font-size: 28px;
+  }
+  .sidebar-main-nav {
+    width: 72px;
+    height: auto;
+    padding-left: 8px;
+  }
+  .sidebar-item {
+    justify-content: center;
+  }
+  .sidebar-label {
+    display: none;
+  }
+  .sidebar-icon {
+    margin-right: 0;
+  }
+  .notification-badge {
+    margin-left: 0;
+    position: absolute;
+    right: 8px;
+  }
+}
